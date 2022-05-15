@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box; }
+
+@font-face {
+    font-family: "everett";
+    src: url(../away/fonts/Everett-Regular.otf);
+  }
+
+@font-face {
+    font-family: "visualt pro";
+    src: url(../away/fonts/VisueltPro-Regular.ttf);
+  }
+  html {
+    font-size: 20px;
+    color: whitesmoke;
+    scroll-behavior: smooth;
+    font-family: "everett";
+    background-color: rgb(87,0,250);
+  }
+  
+  .container {
+    margin: 1rem;
+    display: flex;
+
+  }
+
+  .logo {
+    display: flex;
+    float: left;
+    
+    min-width: 40%;
+    top: 2.8rem;
+    position: fixed;
+    z-index: 1;
+  }
+  
+  .nav {
+    padding: 1.5rem;
+    position:fixed;
+    scale: 1.2;
+    left: 40vw;
+    z-index: 1;
+  
+  }
+
+  a {
+  text-decoration: none;
+  color: whitesmoke;
+
+  }
+
+  a:hover {
+  color:black;
+  }
+
+  a:active {
+  text-decoration: underline;
+ }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+
+}
+
+.about {
+  text-decoration: underline;
+}
+
+.main {
+float: left;
+
+}
+
+.about-title {  
+ display: flex;
+ float: right;
+ width: 45vw;
+ margin-top: 4.2rem;
+
+background: black;
+color: white;
+  
+}
+
+.about-article {
+
+  display: flex;
+  float: right;
+  width: 45vw;
+
+  line-height: 1.5rem;
+
+
+}
+
+.about-writer {
+
+  font-size: 1rem;
+  width: 45vw;
+  margin-top: 2rem;
+
+  z-index: 1;
+  position: sticky;
+
+  float: right;
+
+}
+
+
+span {
+  text-decoration: line-through;
+  font-weight: lighter;
+}
+
+.about-quota {
+  font-size: 2rem;
+  width: 40%;
+  display: inline;
+  padding: 6rem 3rem;
+  position: sticky;
+  margin-top: 7rem;
+
+  float: left;
+}
+@media (max-width: 800px) {
+
+html {
+  background-color: rgb(0, 0, 0);
+}
+
+body {
+  margin: 0;
+}
+
+
+.logo {
+  transform: rotate(270deg);
+  margin-top: 15rem;
+  margin-left: 3rem;
+
+}
+
+.nav {
+  position: fixed;
+  margin-top: -0.2rem;
+  text-align: left;
+  padding: 3rem;
+
+}
+
+.container {
+  margin: 0;
+
+}
+
+.about-article {
+  width: 100vw;
+
+  padding: 2rem;
+}
+
+.about-title {
+  justify-content: center;
+  float: left;
+  margin-left: 1rem;
+  margin-top: 3rem;
+  padding: 1.2rem;
+  color:white;
+  border: 0.1rem white solid;
+  position: fixed;
+  z-index: 1;
+  
+
+}
+
+.about-quota {
+  margin-top: 10rem;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 45vw;
+  margin-left: 1rem;
+  text-align: left;
+  transition: rgb(87,0,250) 200ms easy in 1s;
+}
+
+.about-writer {
+  
+  margin-top: 2rem;
+  padding: 2rem;
+  font-size: 1rem;
+  width: 100vw;
+  float: left;
+  font-size: 0.7rem;
+  
+  }
+
+.about-quota:hover {
+  background-color: rgb(87,0,250) ;
+}
+
+a:hover {
+  color:rgb(87,0,250);
+  }
+}
