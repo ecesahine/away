@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box; }
+
+@font-face {
+    font-family: "everett";
+    src: url(../away/fonts/Everett-Regular.otf);
+  }
+
+@font-face {
+    font-family: "visualt pro";
+    src: url(../away/fonts/VisueltPro-Regular.ttf);
+  }
+  html {
+    font-size: 20px;
+    color: whitesmoke;
+    scroll-behavior: smooth;
+    font-family: "everett";
+    background-color: rgb(87,0,250);
+  }
+  
+  .container {
+    margin: 1rem;
+    display: flex;
+
+  }
+  
+
+
+  .logo {
+    min-width: 40vw;  
+    position: fixed;
+    top: 10;
+    z-index: 1;
+    
+   
+    
+  }
+  
+  .nav {
+    padding: 2rem;
+    position:fixed;
+    left: -48px;
+    top: 110px;
+    float: left;
+    z-index: 1;
+  
+  }
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+
+}
+
+a:hover {
+  color:black;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  align-content: center;
+  margin: 0;
+
+}
+
+.stories {
+  text-decoration: underline;
+}
+
+.story-title {
+  width: 50%;
+  margin: 0;
+  display: inline;
+  float: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  background: black;
+  color: white;
+  line-height: 1.33;
+  padding: 5px;
+}
+.story-title-2 {
+
+  float: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+
+}
+
+.story-paragraph {
+display: inline;
+  float: right;
+  padding-right: 20px;
+  max-width:51%;
+  color: #fff;
+  text-align:left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+   
+
+}
+
+
+.image-box {
+  display: fixed;
+ padding-top: 50px;
+}
+.image-box-2 {
+  border: 90px;
+  display: fixed;
+
+}
