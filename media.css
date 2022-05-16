@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box; }
+
+@font-face {
+    font-family: "everett";
+    src: url(../away/fonts/Everett-Regular.otf);
+  }
+
+@font-face {
+    font-family: "visualt pro";
+    src: url(../away/fonts/VisueltPro-Regular.ttf);
+  }
+  html {
+    font-size: 20px;
+    color: whitesmoke;
+    scroll-behavior: smooth;
+    font-family: "everett";
+    background-color: rgb(87,0,250);
+  }
+  
+  .container {
+    margin: 1rem;
+    display: flex;
+
+  }
+  
+  main {
+
+   display: flex;
+   float: left;
+   flex-wrap: nowrap;
+   flex-direction: column;
+  }
+
+  .logo {
+    max-width: 45vw;
+    min-width: auto;
+    
+    
+    position: fixed;
+    top: 3rem;
+    z-index: 1;
+    
+   
+    
+  }
+  
+  .nav {
+    padding: 2rem;
+    position:fixed;
+    
+    left: 40vw;
+    z-index: 1;
+  
+  }
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+
+}
+
+a:hover {
+  color:black;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  align-content: center;
+  margin: 0;
+
+}
+
+.media {
+  text-decoration: underline;
+}
+
+.media-subtitle {
+ 
+  font-size: 1rem;
+
+
+  z-index: 1;
+  position: sticky;
+  float: inline-start;
+}
+.media-image {
+  display: flex;
+  float: left;
+  border: 0.2rem white solid;
+  max-width: 45vw;
+  margin-top: 10rem;
+}
+
+.media-title {
+  display: flex;
+  float: right;
+  width: 45vw;
+  margin-top: 4.2rem;
+ 
+ background: black;
+ color: white;
+   
+  
+
+}
+
+.media-article {
+
+  display: inline;
+  float: right;
+  max-width: 40vw;
+
+  line-height: 1.5rem;
+  margin-top: 2rem;
+ 
+
+}
+
+span {
+  text-decoration: line-through;
+  font-weight: lighter;
+}
+
+@media (max-width: 800px) {
+
+html {
+  background-color: rgb(0, 0, 0);
+}
+
+body {
+  margin: 0;
+}
+
+
+.logo {
+
+margin-top: 3.5rem;
+padding-top: 6.3rem;
+transform: rotate(-90deg);
+}
+
+.nav {
+  margin-bottom: 0;
+  position: fixed;
+  margin-top: 18rem;
+  padding-top: 8rem;
+  margin-left: 1.5rem;
+  transform: scale(1.5);
+
+}
+
+.container {
+  margin: 0;
+
+}
+
+
+.media-article {
+  
+ background-color: rgb(87,0,250, 0.5);
+ z-index: 1;
+ margin-top: 2rem;
+ padding: 0;
+ font-size: 1rem;
+ width: 100vw;
+}
+
+.story-quota:hover {
+  background-color: rgb(87,0,250) ;
+}
+
+a:hover {
+  color:rgb(87,0,250);
+}
+}
