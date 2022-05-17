@@ -10,6 +10,7 @@
     font-family: "visualt pro";
     src: url(../away/fonts/VisueltPro-Regular.ttf);
   }
+
   html {
     font-size: 20px;
     color: whitesmoke;
@@ -21,7 +22,6 @@
   .container {
     margin: 1rem;
     display: flex;
-
   }
 
   .logo {
@@ -41,177 +41,164 @@
     scale: 1.2;
     left: 40vw;
     z-index: 1;
-  
   }
 
   a {
-  text-decoration: none;
-  color: whitesmoke;
-
+    text-decoration: none;
+    color: whitesmoke;
   }
 
   a:hover {
-  color:black;
+    color:black;
   }
 
   a:active {
-  text-decoration: underline;
- }
+    text-decoration: underline;
+  }
 
-ul {
-  list-style-type: none;
-  margin: 0;
+ ul {
+   list-style-type: none;
+   margin: 0;
+  }
 
-}
+ .about {
+   text-decoration: underline;
+  }
 
-.about {
-  text-decoration: underline;
-}
+ .main {
+   float: left;
+  }
 
-.main {
-float: left;
+ .about-title {  
+   display: flex;
+   float: right;
+   width: 45vw;
+   margin-top: 5.5rem;
+   background: black;
+   color: white;
+  }
 
-}
+ .about-article {
+   display: flex;
+   float: right;
+   width: 45vw;
 
-.about-title {  
- display: flex;
- float: right;
- width: 45vw;
- margin-top: 4.2rem;
+   line-height: 1.5rem;
+  }
 
-background: black;
-color: white;
-  
-}
+ .about-writer {
+   font-size: 1rem;
+   width: 45vw;
+   margin-top: 0.5rem;
 
-.about-article {
-
-  display: flex;
-  float: right;
-  width: 45vw;
-
-  line-height: 1.5rem;
-
-
-}
-
-.about-writer {
-
-  font-size: 1rem;
-  width: 45vw;
-  margin-top: 2rem;
-
-  z-index: 1;
-  position: sticky;
-
-  float: right;
-
-}
+   z-index: 1;
+   position: sticky;
+ 
+   float: right;
+  }
 
 
-span {
-  text-decoration: line-through;
-  font-weight: lighter;
-}
+ span {
+   text-decoration: line-through;
+   font-weight: lighter;
+  }
 
-.about-quota {
-  font-size: 2rem;
-  width: 40%;
-  display: inline;
-  padding: 6rem 3rem;
-  position: sticky;
-  margin-top: 7rem;
+ .about-quota {
+   font-size: 2rem;
+   width: 40%;
+   display: inline;
+   padding: 6rem 3rem;
+   position: sticky;
+   margin-top: 7rem;
 
-  float: left;
-}
+   float: left;
+  }
+
 @media (max-width: 800px) {
 
-html {
-  background-color: rgb(87,0,250);
-}
-
-body {
-  margin: 0;
-}
-
-
-.logo {
-  margin: 1rem;
-  width: 80vw;
-}
-
-.nav {
-  position: fixed;
-  margin-left: 7rem;
-  margin-top: 2.6rem;
-  text-align: left;
-  transform: scale(0.7);
-  background-color: rgb(87,0,250,0);
-  padding: 0;
-  z-index: 0;
-
-
-
-}
-
-.container {
-  margin: 0;
-  flex-direction: row ;
-
-}
+  html {
+    background-color:  rgb(87,0,250);
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .container {
+    margin: 0;
+    flex-direction: row ;
+    
+  }
+  
+  .logo {
+    margin: 1rem;
+    width: 70vw;
+  }
+  
+  .nav {
+    position: fixed;
+    margin-left: 6.5rem;
+    margin-top: 2.8rem;
+    text-align: left;
+    transform: scale(0.6);
+    background-color: rgb(87,0,250,0);
+    padding: 0;
+    z-index: 0;
+  }
+  
+  main {
+    margin-top: 8rem;
+  }
+  
+  .about-quota {
+    margin: 0.5rem 1rem;
+    font-size: 1.5rem;
+    text-align: left;
+    z-index: -1;
+    background-color:black;
+    color: white;
+    padding: 1rem;
+    width: 90vw;
+    height: 30vh;
+    border: 0.1rem white solid;
+  }
+  
 
 .about-article {
   width: 100vw;
-
   z-index: 1;
   display: inline;
   padding: 1rem;
+  padding-right: 2rem;
+}
+
+.about-writer {
+  padding-left: 1rem;
+  font-size: 1rem;
+  width: 100vw;
+  float: left;
+  font-size: 1rem;
 }
 
 .about-title {
  display: none;
-  
-
 }
 
-.about-quota {
-  margin-top: 10rem;
-  font-size: 1.5rem;
-  width: 95vw;
-  text-align: left;
-  z-index: -1;
-  background-color:white;
-  color: black;
-  padding: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-
-.about-writer {
-  
-  margin-top: 2rem;
-  padding: 2rem;
-  font-size: 1rem;
-  width: 100vw;
-  float: left;
-  font-size: 0.7rem;
-  
-  }
 
 .about-quota:hover {
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   line-height: 1.33;
   padding: 5px;
+  color:rgb(87,0,250);
 }
 
 a:hover {
-  color:rgb(87,0,250);
+  color:black;
   }
 
-  .logo:scope {
-    opacity: 10;
-  }
+.logo:scope {
+  opacity: 10;
+}
 
 }

@@ -20,13 +20,12 @@
   
   .container {
     margin: 1rem;
-
+  
   }
   
   main {
-
-    display: flex;
-    float: left;
+   display: flex;
+   float: left;
    flex-wrap: nowrap;
    flex-direction: column;
   }
@@ -77,36 +76,36 @@ ul {
   text-decoration: underline;
 }
 
+.background {
+  display: none;
+}
+
 .story-title {
   background: black;
   color: white;
   max-width: 45vw;
 
-  display: inline;
+  display: flex;
   line-height: 2.3rem;
-  margin-top: 2rem;
-
+  margin-top: -1rem;
   float: right;
 }
 
 .story-writer {
   font-weight: lighter;
-
   display: inline;
-
-
   float: right;
 
 }
 
 .story-article {
 
-  display: inline;
+  display: flex;
   float: right;
   max-width: 45vw;
 
   line-height: 1.5rem;
-  margin-top: 2rem;
+  
 
 
 }
@@ -121,12 +120,6 @@ ul {
   top: 9.5rem;
 
   float: inline-start;
-}
-
-
-span {
-  text-decoration: line-through;
-  font-weight: lighter;
 }
 
 .story-quota {
@@ -149,30 +142,50 @@ body {
   margin: 0;
 }
 
+.container {
+  margin: 0;
+  flex-direction: row ;
+  
+}
 
 .logo {
   margin: 1rem;
-  width: 80vw;
+  width: 70vw;
 }
 
 .nav {
   position: fixed;
-  margin-left: 7rem;
-  margin-top: 3rem;
+  margin-left: 6.5rem;
+  margin-top: 2.8rem;
   text-align: left;
-  transform: scale(0.7);
+  transform: scale(0.6);
   background-color: rgb(87,0,250,0);
   padding: 0;
   z-index: 0;
-
-
-
 }
 
-.container {
-  margin: 0;
-  flex-direction: row ;
+main {
+  margin-top: 8rem;
+}
 
+.story-quota {
+  margin: 0.5rem 1rem;
+  font-size: 1.5rem;
+  text-align: left;
+  z-index: -1;
+  background-color:white;
+  color: black;
+  padding: 1rem;
+  width: 90vw;
+  height: 50vh;
+}
+
+.story-quota:hover {
+  background-color: rgb(87,0,250) ;
+}
+
+a:hover {
+  color:black;
 }
 
 .story-article {
@@ -189,28 +202,5 @@ body {
 
 .story-subtitle {
   display: none;
-}
-
-.story-quota {
-    margin-top: 10rem;
-    font-size: 1.5rem;
-    width: 95vw;
-    text-align: left;
-    z-index: -1;
-    background-color:white;
-    color: black;
-    padding: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-  
-}
-
-.story-quota:hover {
-  background-color: rgb(87,0,250) ;
-}
-
-a:hover {
-  color:rgb(87,0,250);
 }
 }
