@@ -72,7 +72,7 @@ ul {
 
 }
 
-.stories {
+.media {
   text-decoration: underline;
 }
 
@@ -80,37 +80,24 @@ ul {
   display: none;
 }
 
-.story-title {
+.media-title {  
+  display: flex;
+  float: right;
+  width: 45vw;
+  margin-top: 2.8rem;
   background: black;
   color: white;
-  max-width: 45vw;
+ }
 
-  display: flex;
-  line-height: 2.3rem;
-  margin-top: -1rem;
-  float: right;
-}
-
-.story-writer {
-  font-weight: lighter;
-  display: inline;
-  float: right;
-
-}
-
-.story-article {
-
+ .media-article {
   display: flex;
   float: right;
-  max-width: 45vw;
+  width: 45vw;
 
   line-height: 1.5rem;
-  
+ }
 
-
-}
-
-.story-subtitle {
+.media-subtitle {
  
   font-size: 1rem;
   width: 40vw;
@@ -122,13 +109,15 @@ ul {
   float: inline-start;
 }
 
-.story-quota {
+
+.media-image {
   font-size: 2rem;
   width: 40vw;
   display: inline;
   padding: 6rem 3rem;
   position: sticky;
   top: 10rem;
+  margin-top: 3rem;
 
   float: left;
 }
@@ -144,8 +133,7 @@ body {
 
 .container {
   margin: 0;
-  flex-direction: row ;
-  
+  flex-direction: row;
 }
 
 .logo {
@@ -159,7 +147,7 @@ body {
   margin-top: 2.8rem;
   text-align: left;
   transform: scale(0.6);
-  background-color: rgb(87,0,250,0);
+  background-color:rgb(87,0,250,0);
   padding: 0;
   z-index: 0;
 }
@@ -168,39 +156,35 @@ main {
   margin-top: 8rem;
 }
 
-.story-quota {
+.media-image {
   margin: 0.5rem 1rem;
-  font-size: 1.5rem;
-  text-align: left;
-  z-index: -1;
   background-color:white;
   color: black;
   padding: 1rem;
   width: 90vw;
-  height: 50vh;
-}
-
-.story-quota:hover {
-  background-color: rgb(87,0,250) ;
+  clear: both;
 }
 
 a:hover {
   color:black;
 }
 
-.story-article {
+.media-article {
+  float: none;
+  margin: 0.5rem 1rem;
+  text-align: left;
+  z-index: -1;
+  color:white;
+  padding: 1rem;
+  width: 90vw;
+  text-decoration: none;
+}
+
+.media-title {
   display: none;
 }
 
-.story-title {
-  display: none;
-}
-
-.story-writer {
-  display: none;
-}
-
-.story-subtitle {
+.media-subtitle {
   display: none;
 }
 }

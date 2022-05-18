@@ -71,8 +71,10 @@ ul {
   margin: 0;
 
 }
-
-.stories {
+main {
+  margin-top: 3rem;
+}
+.history {
   text-decoration: underline;
 }
 
@@ -80,37 +82,37 @@ ul {
   display: none;
 }
 
-.story-title {
+.history-title {
   background: black;
   color: white;
   max-width: 45vw;
 
-  display: flex;
+  display: inline;
   line-height: 2.3rem;
   margin-top: -1rem;
   float: right;
+  justify-content: flex-start;
 }
 
-.story-writer {
+.history-writer {
+
   font-weight: lighter;
   display: inline;
   float: right;
 
 }
 
-.story-article {
+.history-article {
 
-  display: flex;
+  display: inline;
   float: right;
   max-width: 45vw;
 
   line-height: 1.5rem;
-  
-
-
+  margin-top: 2rem;
 }
 
-.story-subtitle {
+.history-subtitle {
  
   font-size: 1rem;
   width: 40vw;
@@ -122,16 +124,17 @@ ul {
   float: inline-start;
 }
 
-.story-quota {
-  font-size: 2rem;
+.history-image {
   width: 40vw;
   display: inline;
-  padding: 6rem 3rem;
+  margin-top: 10rem;
   position: sticky;
-  top: 10rem;
+  top: 11rem;
+  border: 0.3rem white solid;
 
   float: left;
 }
+
 @media (max-width: 800px) {
 
 html {
@@ -168,16 +171,14 @@ main {
   margin-top: 8rem;
 }
 
-.story-quota {
+.history-image {
   margin: 0.5rem 1rem;
   font-size: 1.5rem;
   text-align: left;
   z-index: -1;
   background-color:white;
   color: black;
-  padding: 1rem;
   width: 90vw;
-  height: 50vh;
 }
 
 .story-quota:hover {
@@ -188,19 +189,19 @@ a:hover {
   color:black;
 }
 
-.story-article {
+.history-article {
   display: none;
 }
 
-.story-title {
+.history-title {
   display: none;
 }
 
-.story-writer {
+.history-writer {
   display: none;
 }
 
-.story-subtitle {
+.history-subtitle {
   display: none;
 }
 }
